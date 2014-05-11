@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:id="@+id/tableEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" >
+
+        <TableRow
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp" >
+
+            <EditText
+                android:id="@+id/enterNotesReminders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:completionThreshold="1"
+                android:gravity="center"
+                android:hint="Enter Note / Reminder"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <SeekBar
+                android:id="@+id/hourSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.5"
+                android:max="23" />
+
+            <TextView
+                android:id="@+id/hoursValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="HH : 00"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <SeekBar
+                android:id="@+id/minuteSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.5"
+                android:max="59" />
+
+            <TextView
+                android:id="@+id/minutesValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="MM : 00"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp" >
+
+            <CheckBox
+                android:id="@+id/reminderCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Reminder"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <View
+            android:id="@+id/seperatorLine"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/holo_blue_light" />
+
+        <TableRow
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/doneText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Done"
+                android:textSize="16sp" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

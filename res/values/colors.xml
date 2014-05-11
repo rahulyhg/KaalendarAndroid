@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="normalDay">#59666F</color>
+    <color name ="importantDay">#0090FF</color>
+
+
+</resources>
